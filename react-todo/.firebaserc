@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "svelte-todo-aa2c1"
+  },
+  "targets": {
+    "svelte-todo-aa2c1": {
+      "hosting": {
+        "react": [
+          "react-a4958"
+        ]
+      }
+    }
+  }
+}
