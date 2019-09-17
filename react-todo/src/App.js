@@ -27,7 +27,9 @@ const App = () => {
 					<Navbar logout={logout} />
 					<Profile {...user} />
 					<hr />
-					<Todos uid={user.uid} />
+					<main>
+						<Todos uid={user.uid} />
+					</main>
 				</div>
 			) : (
 				<button type="button" className="btn btn-dark" onClick={login}>

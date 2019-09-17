@@ -55,7 +55,7 @@ const Todos = ({ uid }) => {
 			display: "block",
 		},
 		tableHead: {
-			textAlign: "left",
+			textAlign: "center",
 		},
 	};
 
@@ -65,16 +65,16 @@ const Todos = ({ uid }) => {
 				<caption>List of TODOs</caption>
 				<thead className="thead-dark">
 					<tr>
-						<th scope="col" style={styles.tableHead}>
+						<th scope="col" style={{ ...styles.tableHead, width: "10%" }}>
 							Task No.
 						</th>
-						<th scope="col" style={styles.tableHead}>
+						<th scope="col" style={{ ...styles.tableHead, width: "70%" }}>
+							Task
+						</th>
+						<th scope="col" style={{ ...styles.tableHead, width: "10%" }}>
 							Complete
 						</th>
-						<th scope="col" style={styles.tableHead}>
-							Action
-						</th>
-						<th scope="col" style={styles.tableHead}>
+						<th scope="col" style={{ ...styles.tableHead, width: "10%" }}>
 							Remove
 						</th>
 					</tr>
@@ -100,8 +100,8 @@ const Todos = ({ uid }) => {
 				value={text}
 				onChange={updateText}
 				placeholder="Enter todo..."
-      />
-      <br />
+			/>
+			<br />
 			<button type="button" className="btn btn-dark" onClick={add}>
 				Add Task
 			</button>

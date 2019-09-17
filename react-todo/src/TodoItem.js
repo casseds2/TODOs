@@ -19,7 +19,7 @@ const TodoItem = ({ index, id, complete, text, updateStatus, remove }) => {
 
 	return (
 		<tr>
-			<th scope="row">{index}</th>
+			<td style={styles.textCenter}>{index}</td>
 			{complete ? (
 				<td className="table-success" style={styles.textCenter}>
 					<span style={styles.isComplete}>{text}</span>
